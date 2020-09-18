@@ -1,0 +1,7 @@
+void main(){ //un dart siempre reuier la funcion main
+    // numeros
+    int empleados = 8;
+     double pi = 3.1416;
+
+     print ('$empleados - $pi');
+}
