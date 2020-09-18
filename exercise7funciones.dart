@@ -11,5 +11,5 @@ saludar(){
   //esto es una funcion personalizada, no lleva el 'void' que al imprimirse solo imprimira en mensaje 'Hola'
   
   //cuando el compilador ejecuta la primera linea void main() corre la siguiente linea y despues detecta la funcion 'saludar();' va buscar la definicion de la misma, sala a la siguiente linea 'saludar(){'y empezara a ejecutar la linea de codigo 'print('Hola');' 
-  
-}
+//
+} 
