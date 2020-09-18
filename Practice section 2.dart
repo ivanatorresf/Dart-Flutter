@@ -4,6 +4,14 @@ void main() {
 
 
 //ejercicio 2
-String nombre;
-var ('Hola $nombre');
+//String nombre;
+//var ('Hola $nombre');
+
+
+
+//
+
+
+
+
 }
