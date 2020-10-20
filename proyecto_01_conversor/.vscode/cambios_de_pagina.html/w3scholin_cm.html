@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<title>Convertidor In-Cm</title>
+<body>
+
+<h2>Convertidor In-Cm</h2>
+<p>Type a value Inch the In field to convert the value to Centimeters:</p>
+
+    <p>
+    <label>Inch</label>
+    <input id="inputInch" type="number" placeholder="Inch" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+    </p>
+
+<p>Centimeters: <span id="output1"></span></p>
+<p></p>
+<div id="inputInch">Bloque de texto</div>
+
+    <p>
+     <label> Tus opciones podrian ser estas: "Small" </label>
+        <input type="button" value="Small">
+     <input type="button" value="Medium">
+        <input type="button" value="large">
+    </p>
+    <p>
+      <label> Tus opciones podrian ser estas: "Medium" </label>
+        <input type="button" value="Small">
+     <input type="button" value="Medium">
+      <input type="button" value="large">
+     <input type="button" value="Extra large">
+    </p>
+
+<script>
+function LengthConverter(valNum) {
+  document.getElementById("output1").innerHTML=valNum*2.54;
+}
+<div id="ocultable"> soy un texto ocultable.<input type="button" value="Small"></div>
+<button onclick="return mostarOcultar('ocultable')"type="button">Mostrar/Ocultar</button>
+<script>
+    function mostarOcultar(id){
+        var elemento = document.getElementById(id);
+        if(!elemento){
+            return true;
+        }
+        if (elemento.style.display == "none") {
+            elemento.style.display = "block"
+        } else {
+            elemento.style.display = "none"
+        };
+        return true;
+    };
+</script>
+</body>
+</html>
