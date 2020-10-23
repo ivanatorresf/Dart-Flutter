@@ -6,6 +6,7 @@ import 'package:project_apollo_07/src/pages/pages/slider_page.dart';
 Map<String, WidgetBuilder> getAplicationRoutes() {
   return <String, WidgetBuilder>{
     '/': (BuildContext context) => MainApp(),
+    'MainApp': (BuildContext context) => MainApp(),
     'SliderPage': (BuildContext context) => SliderPage(),
   };
 }
